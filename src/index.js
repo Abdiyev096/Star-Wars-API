@@ -1,15 +1,6 @@
-// const getData = async (url) => {
-// 	const res = await fetch(url);
-// 	const body = await res.json();
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/app';
 
-// 	return body;
-// }
-
-// getData('https://swapi.dev/api/people/1/')
-// 	.then((body) => {
-// 		console.log(body);
-// 	})
-
-
-fetch('https://swapi.dev/api/people/1/')
-	.then(response => console.log(response))
+ReactDOM.render(<App />,
+  document.getElementById('root'));
